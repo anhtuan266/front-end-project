@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/projectCss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+<!-----------------logo/search/login/banner(1)----------------->
+<div class="info">
+	
+		<div class="logoSlogan">
+			<div class="logo"> <img src="image/logoDafix.png" width="180" height="180"/></div>
+			<div class="slogan"><h1>THE STOCKX STORE</h1></div>
+			<div class="slogan2"><p>The market for hypebeast</p></div>
+		</div>
+		
+		<div class="search">
+			<form>
+				<input type="text" name="search"/>
+				<div class="iconsearch"> 
+				<img src="image/kripto-search-b.png" width="32" height="32"/>
+				</div>
+			</form>			
+		</div>
+		<!------button(signin,up)------>
+		<div class="login">
+			<button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Login</button>
+			<button onclick="document.getElementById('id02').style.display='block'" style="width: auto;">Sign up</button>
+		</div>
+<div id="id01" class="modal">
+  
+ <form class="modal-content animate" action="/action_page.php">
+		<div class="imgcontainer">
+		  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>
+
+		<div class="containerlogin">
+			  <label for="uname"><b>Username</b></label>
+			  <input type="text" placeholder="Enter Username" name="uname" required>
+
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <button type="submit">Login</button>
+			  <label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			  </label>
+		</div>
+
+		<div class="containerlogin" style="background-color:#f1f1f1">
+			  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			  <span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+ </form>
+  
+</div>
+	
+<div id="id02" class="modal">
+  
+	  <form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+			 	 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<div class="containerlogin">
+				  <label for="uname"><b>Username</b></label>
+				  <input type="text" placeholder="Enter Username" name="uname" required>
+
+				  <label for="psw"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="psw" required>
+
+				   <label for="psw"><b>Repeat Password</b></label>
+				  <input type="password" placeholder="Repeat Password" name="rpsw" required>
+			</div>
+
+			 <div class="clearfix">
+				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+				<button type="submit" class="signupbtn">Sign Up</button>
+			 </div>
+	  </form>
+  
+</div>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+
+</div>
+	<!-----------------menuBar(2)-------------------------->
+<div class="nav">
+		<div class="menu1">
+ 			<a class="active" href="Project-home.html">Home</a>
+ 		</div>
+ 		<div class="menu2">
+  			<a href="TipsAndClean.html">TipsToClean</a>
+  		</div>
+  		<div class="menu3">
+  			<a href="News.html">News</a>
+  		</div>
+  		<div class="menu4">
+  			<a href="Product.html">Products</a>
+  		</div>
+  		<div class="menu5">
+  			<a href="Contact.html">Contact</a>
+  		</div>
+</div>
+<!-------------------------------slideShowName(3)------------------->
+<div class="slideShowName">
+	OUR BEST SELLERS
+	<div><img src="image/moneyDafix.png" height="50" width="50"/></div>
+</div>
+<!-------------------------------slideShow(4)----------------------->
+<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="NamebestSeller">JORDAN 1 SHATTERED</div>
+		  <div class="text">
+				 <p>Available size : 8.5; 7; 5.5</p>
+				 <p>Price : 553$</p>
+		  </div>
+		  <img src="image/jordan1Shattered.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="NamebestSeller">JORDAN 6 GATORADE</div>
+		  <div class="text">
+				 <p>Available size : 8.5; 9; 7; 6.5</p>
+				 <p>Price : 252$</p>
+		  </div>
+		  <img src="image/jordan6gatorade.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="NamebestSeller">YEEZY 500</div>
+		  <div class="text">
+				 <p>Available size : 8; 10</p>
+				 <p>Price : 391$</p>
+		  </div>
+		  <img src="image/yeezy500.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="NamebestSeller">ADIDAS HUMAN RACE SOLAR</div>	
+		  <div class="text">
+				 <p>Available size : 6; 7</p>
+				 <p>Price : 315$</p>
+		  </div>
+		  <img src="image/HuSolar.png" style="width:100%">
+		</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-----------------------Sneakers(5)--------------------------->
+<div class="RRProducts">
+	RCENTLY RELEASED PRODUCTS
+</div>
+
+<form>
+<fieldset>
+	<legend>NIKE <img src="image/nikelogo.png" height="20"/></legend>
+	<div class="SneakerCont">
+	
+		<div class="product">
+			<img src="image/AF1offwhite.png"/>	
+			<div class="overlay">
+    			<img src="image/AF1OF.png"/>
+  			</div>	
+			<p class="name">AF1 x OffWhite</p>
+			<p class="price"> Price :380$</p>			
+		</div>
+		
+		<div class="product">
+			<img src="image/jordan4TravisScott.png"/>
+			<div class="overlay">
+    			<img src="image/travisScottOF.png"/>
+  			</div>	
+			<p class="name"> JD4 x TravisScott</p>
+			<p class="price"> Price :350$</p>			
+		</div>
+		
+		<div class="product">
+			<img src="image/nikePresto.png"/>	
+			<div class="overlay">
+    			<img src="image/prestoOWoF.png"/>
+  			</div>	
+			<p class="name"> Presto x OffWhite</p>
+			<p class="price"> Price :400$</p>			
+		</div>
+		
+		<div class="product">
+			<img src="image/nikeVapromax.png"/>	
+			<div class="overlay">
+    			<img src="image/vapromaxOF.png"/>
+  			</div>	
+			<p class="name"> Vapromax x OffWhite</p>
+			<p class="price"> Price :310$</p>			
+		</div>
+		
+	</div>
+	
+</fieldset>	
+</form>
+
+<form>
+<fieldset>
+	<legend>ADIDAS <img src="image/adidaslogo.png" height="20"/></legend>
+	<div class="SneakerCont">
+	
+		<div class="product">
+			<img src="image/goku.png"/>
+			<div class="overlay">
+    			<img src="image/gokuOF.png"/>
+  			</div>		
+			<p class="name">EQT x Goku</p>
+			<p class="price"> Price :290$</p>			
+		</div>
+		
+		<div class="product">
+			<img src="image/frieza.png"/>
+			<div class="overlay">
+    			<img src="image/friezaOf.png"/>
+  			</div>		
+			<p class="name">EQT x Frieza</p>
+			<p class="price"> Price :290$</p>			
+		</div>
+		
+		<div class="product">
+			<img src="image/nmdbape.png"/>	
+			<div class="overlay">
+    			<img src="image/nmdBapeOF.png"/>
+  			</div>	
+			<p class="name">NMD x Bape</p>
+			<p class="price"> Price :560$</p>			
+		</div>
+		
+		<div class="product">
+			<img src="image/wing3.0.png"/>	
+			<div class="overlay">
+    			<img src="image/wingOF.png"/>
+  			</div>	
+			<p class="name">Adidas Wing 3.0</p>
+			<p class="price"> Price :280$</p>			
+		</div>
+		
+	</div>
+	
+</fieldset>	
+</form>
+<!---------------------------CLothings(6)----------------------------->
+<div class="RRProducts">
+	POPULAR HYPEBEAST STREETWEARS
+</div>
+
+
+<form>
+<fieldset class="fieldset2">
+	<legend>HOT ITEMS</legend>
+	
+	<div class="c1">
+		<div class="clo12" id="sup"> 
+			<img src="image/supremexnikeFix.png"/>
+		</div>
+		<img src="image/supremeTeam.png" class="clo1" width="550" height="350"/>
+	</div>
+		
+	<div class="ex1">
+  		<a id="explore" href="##">Explore</a>
+  	</div>
+  	
+	<div class="c2">
+		<div class="clo22" id="off"> 
+			<img src="image/OWhoodie.png"/>
+		</div>
+  		<img src="image/offWhiteTeam.png" width="550" height="350" class="clo2"/>
+	</div>
+
+	<script>
+		document.getElementById("explore").onclick=function(){
+			document.getElementById("sup").classList.add("supreme")
+			document.getElementById("off").classList.add("offwhite")
+		}
+	</script>
+
+</fieldset>	
+</form>
+<!-------------------------------------fOOTER(7)------------------->	
+<div class="icon-bar">
+			  <div class="icon-bar1">
+			  	<a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+			  </div>
+				<div class="icon-bar2">
+					<a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+				</div>
+			  <div class="icon-bar3">
+			  	 <a href="#" class="google"><i class="fa fa-google"></i></a> 
+			  </div>
+			  <div class="icon-bar4">
+			  	<a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+			  </div>
+</div>
+
+<footer>
+		<div class="footer_left">
+					<ul>
+						<h2>CUSTOMER SUPORT</h2>
+						<li>Help</li>
+						<li>Order Tracker</li>
+						<li>Returns & Refunds</li>
+						<li>Sizing</li>
+						<li>Store Locator</li>
+						<li>Site Map</li>
+					</ul>
+				</div>
+			
+			<div class="footer_center">
+				<ul>			
+					<h2>ABOUT US</h2>
+					<li>We were born to create hypebeats</li>
+					<li>We were born to create sneakerheads</li>
+					<li>Let us change your style</li>
+					<li>Hot Line: 0123456789</li>
+					<li>About business: 0987654321</li>
+				</ul>
+					
+			</div>
+				
+			<div class="footer_right">
+				<img src="image/Xstocklogo2.png"/>
+			</div>			
+</footer>			
+				
+		
+</div>
+
+</body>
+</html>

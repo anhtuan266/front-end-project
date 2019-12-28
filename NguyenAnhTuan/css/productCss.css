@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+		width: 1280px;
+		height: 3000px;
+		background-color: whitesmoke;
+		margin: 0 auto;
+		padding: 0px;
+	}
+/*----------CssOf(1)---------------------*/
+.info{
+	width: 100%;
+	height: 400px;
+	background-image: url(../image/bannerDafix.png);
+}
+.logo{
+	width: 300px;
+	height: 150px;
+	float: left;
+	margin-left: 200px;
+	padding-left: 90px;
+}
+.search{
+	width: 600px;
+	height: 150px;
+	float: left;
+	text-align: center;
+	position: relative;	
+	margin-left: 330px;
+}
+.search input{
+	width: 600px;
+	height: 40px;
+	margin-top: 80px;
+	border: 2px solid white;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.iconsearch{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top:85px;
+	right:5px;
+}
+.slogan{
+	width: 250px;
+	height: 180px;
+	border-right: 4px solid white;
+	float: left;
+	margin-left: 0px;
+}
+.slogan h1{
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	color: white;
+}
+.slogan2 {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+.slogan2 p{
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
+	color: white;
+	padding-left: 15px;
+	padding-top: 60px;
+}
+.logoSlogan{
+	text-align: center;
+	width: 100%;
+	height: 180px;
+}
+/*-----------------------CssOf(2)-----------------*/
+.nav{	
+	width:auto;
+	height: 52px;
+	border: 1px solid black;
+	background-color: black;
+	padding-left: 430px;
+}
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration:underline;
+  font-size: 16px;
+  font-family: 'Anton', sans-serif;
+}
+
+.nav a:hover {
+  background-color: green;
+  color: white;
+}
+.nav a.active {
+  background-color: green;
+  color: white;
+}
+.menu1{
+	animation-duration: 4s;
+	animation-name: menuL;
+	position: relative;
+}
+.menu2{
+	animation-duration: 4s;
+	animation-name: menuL;
+	position: relative;
+}
+.menu3{
+	animation-duration: 4s;
+	animation-name: menuT;
+	position: relative;
+}
+.menu4{
+	animation-duration:4s;
+	animation-name: menuR;
+	position: relative;
+}
+.menu5{
+	animation-duration:4s;
+	animation-name: menuR;
+	position: relative;
+}
+@keyframes menuL{
+	0% {left: -200px}
+	25% {left: 0px}
+	50%{left: 0px}
+	75%{left: 0px}
+	100%{left: 0px}
+	
+}
+@keyframes menuR{
+	0% {right: -200px}
+	25% {right: 0px}
+	50%{right: 0px}
+	75%{right: 0px}
+	100%{right: 0px}
+	
+}
+@keyframes menuT{
+	0% {top: -200px}
+	25% {top: 0px}
+	50%{top: 0px}
+	75%{top: 0px}
+	100%{top: 0px}
+	
+}
+/*--------------------------Cssof(7)-----------------*/
+.icon-bar1{
+	animation-duration: 4s;
+	animation-name: icon;
+	position: relative;
+}
+.icon-bar2{
+	animation-duration: 5s;
+	animation-name: icon;
+	position: relative;
+}
+.icon-bar3{
+	animation-duration: 6s;
+	animation-name: icon;
+	position: relative;
+}
+.icon-bar4{
+	animation-duration:7s;
+	animation-name: icon;
+	position: relative;
+}
+@keyframes icon{
+	0% {left: -100px}
+	25% {left: 0px}
+	50%{left: 0px}
+	75%{left: 0px}
+	100%{left: 0px}
+	
+}
+
+.icon-bar {
+  position: fixed;
+  top: 25%;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: green;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+footer{
+	width:100%;
+	height: 300px;
+	background-color: black;
+	clear: both;
+}
+footer .footer_left{
+	width: 30%;
+	height: 200px;
+	float: left;
+}
+footer .footer_center{
+	width: 30%;
+	height: 300px;
+	float: left;
+}
+footer .footer_right{
+	width: 20%;
+	height: 200px;
+	float: left;	
+	text-align: center;
+	margin-top: 50px;
+	border-left: 3px solid white;
+}
+
+ul{
+	padding-top: 10px;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+ul li{
+	font-size: 15px;
+	line-height: 20px;
+	
+}
+/*----------------------------------productCss---------------------------*/
+.productContainer{
+	border: 1px solid black;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0px;
+}
+table{
+	background-color: white;
+	width: 1280px;
+	height: 1500px;
+	border: 1px solid black;
+}
+table td{
+	border: 1px solid black;
+}
+table th{
+	border: 1px solid black;
+	font-weight: 200;
+	font-family: 'Slabo 40px', serif;	
+	font-size: 40px;
+}
+.rowTitle{
+	height: 80px;
+}
+.product{
+	width: 310px;
+	height: 270px;
+	border: 1px solid black;
+	text-align: center;
+	position: relative;
+}
+.product p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	color:black;
+}

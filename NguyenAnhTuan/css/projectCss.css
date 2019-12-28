@@ -1,0 +1,774 @@
+@charset "utf-8";
+
+.container{
+		width: 1280px;
+		height: 3000px;
+		background-color: whitesmoke;
+		margin: 0 auto;
+		padding: 0px;
+	}
+/*----------CssOf(1)---------------------*/
+.info{
+	width: 100%;
+	height: 400px;
+	background-image: url(../image/bannerDafix.png);
+}
+.logo{
+	width: 300px;
+	height: 150px;
+	float: left;
+	margin-left: 200px;
+	padding-left: 90px;
+}
+.search{
+	width: 600px;
+	height: 150px;
+	float: left;
+	text-align: center;
+	position: relative;	
+	margin-left: 330px;
+}
+.search input{
+	width: 600px;
+	height: 40px;
+	margin-top: 80px;
+	border: 2px solid white;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.iconsearch{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top:28px;
+	right:5px;
+}
+.slogan{
+	width: 250px;
+	height: 180px;
+	border-right: 4px solid white;
+	float: left;
+	margin-left: 0px;
+}
+.slogan h1{
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	color: white;
+}
+.slogan2 {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+.slogan2 p{
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
+	color: white;
+	padding-left: 15px;
+	padding-top: 60px;
+}
+.logoSlogan{
+	text-align: center;
+	width: 100%;
+	height: 180px;
+}
+/*-----------------------CssOf(2)-----------------*/
+.nav{	
+	width:auto;
+	height: 52px;
+	border: 1px solid black;
+	background-color: black;
+	padding-left: 430px;
+}
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration:underline;
+  font-size: 16px;
+  font-family: 'Anton', sans-serif;
+}
+
+.nav a:hover {
+  background-color: green;
+  color: white;
+}
+.nav a.active {
+  background-color: green;
+  color: white;
+}
+.menu1{
+	animation-duration: 4s;
+	animation-name: menuL;
+	position: relative;
+}
+.menu2{
+	animation-duration: 5s;
+	animation-name: menuL;
+	position: relative;
+}
+.menu3{
+	animation-duration: 6s;
+	animation-name: menuT;
+	position: relative;
+}
+.menu4{
+	animation-duration:7s;
+	animation-name: menuR;
+	position: relative;
+}
+.menu5{
+	animation-duration:8s;
+	animation-name: menuR;
+	position: relative;
+}
+@keyframes menuL{
+	0% {left: -200px}
+	25% {left: 0px}
+	50%{left: 0px}
+	75%{left: 0px}
+	100%{left: 0px}
+	
+}
+@keyframes menuR{
+	0% {right: -200px}
+	25% {right: 0px}
+	50%{right: 0px}
+	75%{right: 0px}
+	100%{right: 0px}
+	
+}
+@keyframes menuT{
+	0% {top: -200px}
+	25% {top: 0px}
+	50%{top: 0px}
+	75%{top: 0px}
+	100%{top: 0px}
+	
+}
+/*<!--------------------------CssOf(3)-------------------->*/
+.slideShowName{
+	width: 1280px;
+	height: 60px;
+	background-color: white;
+	text-align: center;	
+	font-family: 'Righteous', cursive;
+	font-size: 30px;
+	font-weight: bolder;
+	padding-bottom: 40px;
+
+}
+/*--------------------------Cssof(4)----------------------*/
+/* Slideshow container */
+.slideshow-container {
+  width: 1280px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {	
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top:70px ;
+  font-family: 'Francois One', sans-serif;
+  padding-left: 10px;
+}
+
+/* name bestsller product */
+.NamebestSeller {	
+  color: white;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top:20px ;
+  border-bottom: 4px  solid white;
+  font-family: 'Francois One', sans-serif;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*-----------------------------CssOf(5)-----------------------*/
+.RRProducts{
+	width: 1280px;
+	height: 60px;
+	background-color: white;
+	text-align: center;	
+	font-family: 'Righteous', cursive;
+	font-size: 35px;
+	font-weight: bolder;
+	padding-top: 15px;
+
+}
+form{
+	margin-top: 15px;
+}
+legend {
+	font-family: 'Anton', sans-serif;
+	font-size: 25px;
+}
+fieldset {
+	border: 3px solid black;
+	height: auto;
+	text-align: center;
+}
+.SneakerCont{
+	width: 1260px;
+	height: 390px;
+	margin-top: 5px;
+	background-color: black;
+}
+.product{
+	width: 250px;
+	height: 360px;
+	margin-left: 50px;
+	float: left;
+	margin-bottom: 60px;
+	position: relative;
+		
+}
+.name{
+	color: White;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+.price{
+	color:white;
+	font-size:20px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Lato', sans-serif;
+}
+.product img{
+	margin-top: 20px;
+	-webkit-box-shadow: -4px 4px 17px 0px rgba(250,247,250,1);
+	-moz-box-shadow: -4px 4px 17px 0px rgba(250,247,250,1);
+	box-shadow: -4px 4px 17px 0px rgba(250,247,250,1);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:rgba(0,0,0,0.01)
+}
+
+.product:hover .overlay {
+  opacity: 1;
+}
+/*--------------------------------CssOf(6)---------------------------*/
+
+.fieldset2{
+	height: 850px;
+	background-color: white;
+	position: relative;
+}
+.clo1 {
+	-webkit-box-shadow: 40px -40px 0px -5px rgba(0,0,0,1.0);
+	-moz-box-shadow: 40px -40px 0px -5px rgba(0,0,0,1.0);
+	box-shadow: 40px -40px 0px -5px rgba(0,0,0,1.0);
+	position: absolute;
+	left: 1px;
+	top:30px;
+}
+.clo2 {
+	-webkit-box-shadow: 40px -40px 0px -5px rgba(0,0,0,1.0);
+	-moz-box-shadow: 40px -40px 0px -5px rgba(0,0,0,1.0);
+	box-shadow: 40px -40px 0px -5px rgba(0,0,0,1.0);
+	position: absolute;
+	left: 1px;
+	top:30px;
+}
+.c1{
+	height: 400px;
+	position: relative;
+}
+
+.c2{
+	height: 400px;
+	position: relative;
+	top: 20px;
+}
+.clo12{
+	top:10px;
+	left:850px;
+	width: 250px;
+	height: 250px;
+}
+.clo22{
+	top:10px;
+	left: 850px;
+	width: 250px;
+	height: 250px;
+}
+.supreme{
+	animation-duration: 3s;
+	animation-name: ex;
+	position: relative;
+}
+
+@keyframes ex{
+	0%   {left:0px}
+    100%  {left:850px;}
+}
+.offwhite{
+	animation-duration: 3s;
+	animation-name: exx;
+	position: relative;
+}
+@keyframes exx{
+	0%   {left :0px}
+    100%  {left:850px}
+}
+.ex1{
+
+	position: absolute;
+	top: 400px;
+	right: 500px;
+	font-size: 20px;
+	text-align: center;
+}
+.ex1 a{
+	width: 100px;
+	height: 40px;
+	display: block;
+	border: 1px solid black;
+	background-color: black;
+	color: white;
+	font-family: 'Anton', sans-serif;
+	padding-top: 8px;
+}
+.ex1 a:hover{
+	background-color: green;
+}
+ 	
+/*--------------------------Cssof(7)-----------------*/
+.icon-bar1{
+	animation-duration: 4s;
+	animation-name: icon;
+	position: relative;
+}
+.icon-bar2{
+	animation-duration: 5s;
+	animation-name: icon;
+	position: relative;
+}
+.icon-bar3{
+	animation-duration: 6s;
+	animation-name: icon;
+	position: relative;
+}
+.icon-bar4{
+	animation-duration:7s;
+	animation-name: icon;
+	position: relative;
+}
+@keyframes icon{
+	0% {left: -100px}
+	25% {left: 0px}
+	50%{left: 0px}
+	75%{left: 0px}
+	100%{left: 0px}
+	
+}
+
+.icon-bar {
+  position: fixed;
+  top: 25%;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: green;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+footer{
+	width:100%;
+	height: 300px;
+	background-color: black;
+	clear: both;
+}
+footer .footer_left{
+	width: 30%;
+	height: 200px;
+	float: left;
+}
+footer .footer_center{
+	width: 30%;
+	height: 300px;
+	float: left;
+}
+footer .footer_right{
+	width: 20%;
+	height: 200px;
+	float: left;	
+	text-align: center;
+	margin-top: 50px;
+	border-left: 3px solid white;
+}
+
+ul{
+	padding-top: 10px;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+ul li{
+	font-size: 15px;
+	line-height: 20px;
+	
+}
+/*---------------------------CssOfTipandClean------------------*/
+.containerTipsAClean img{
+ float: left;
+}
+.containerTipsAClean p{
+	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+/*---------------------CssofLogin-------------------------*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	border-bottom: 1px solid white;
+	font-family: 'Anton', sans-serif;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+.login{
+	width: 170px;
+	height: 50px;
+	float: right;
+	position: absolute;
+	top :5px;
+	right:30px;
+}
+.login p{
+	margin-top: 85px;
+	text-align: center;
+	font-size: 18px;
+	color:white; 
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: green;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.containerlogin {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: green; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color:rgba(253,253,253,0.80);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Extra styles for the cancel button */
+.cancelbtn2 {
+    padding: 14px 20px;
+    background-color: green;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn2, .signupbtn {
+  float: left;
+  width: 50%;
+}
+/*------------------------------------contactCSs----------------*/
+.contactleft{
+	width: 50%;
+	float: left;
+}
+.contactleft h2{
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	
+}
+.contactleft h3{
+	text-align: center;
+	font-size: 25px;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	
+}
+.contactleft table td{
+	padding: 5px;
+	font-size: 20px;
+	color: gray;
+}
+.contactleft input{
+	width: 250px;
+	height: 30px;
+	
+}
+.contactleft .btn{
+	width: 100px;
+	background-color: black;
+	font-family: 'Anton', sans-serif;
+	color: white;
+}
+.contactContainer{
+	width: 100%;
+	height: auto;	
+	margin-bottom: 5px;
+	background-color: whitesmoke;
+}
+.map{
+	border: 2px solid black;
+	width :600px;
+	height: 600px;
+	position:relative;
+	text-align: center;
+	float: right;
+}
+/*---------------------------------NewsCss-----------------------------*/
+
+.event{
+	border-top: 3px dashed black;
+	width: 1270px;
+	padding:0px;
+	margin:0px;
+}
+.ticket{
+	border: 2px solid black;
+	font-family: 'Anton', sans-serif;
+	width: 200px;
+	text-align: center;
+}
+.ticketform td {
+	border: 1px dashed black;
+	font-family:  'Josefin Sans', sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.ticketform {
+	border: 2px solid black;
+	height: 200px;
+}
+.news{
+	border-top: 3px dashed black;
+	width: 1270px;
+	padding:0px;
+	margin:0px;
+}
+.BigTitle{
+	font-family: 'Anton', sans-serif;
+	font-size: 30px;
+	border-bottom: 4px double black;
+}
+.newsContent{
+	width: 1280px;
+	height: 400px;
+	border-bottom: 4px double black;
+
+}
+.leftcontent {
+	float: left;
+	font-family:  'Josefin Sans', sans-serif;
+	width: 50%;
+	height: 400px;
+	color: grey;
+}
+.rightcontent{
+	float: right;
+	width: 50%;
+	height:400px;
+}
